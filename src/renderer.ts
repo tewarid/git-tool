@@ -26,6 +26,9 @@
  * ```
  */
 
+import 'bootstrap';
 import './index.css';
+import * as ko from 'knockout';
+import {MainViewModel} from './MainViewModel';
 
-console.log('👋 This message is being logged by "renderer.js", included via webpack');
+ko.applyBindings(new MainViewModel());
